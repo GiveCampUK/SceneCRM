@@ -1363,4 +1363,622 @@ namespace LightSwitchApplication
             }
         }
     }
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    public sealed partial class SearchVolunteers
+        : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass>
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private SearchVolunteers() : base("LightSwitchApplication:SearchVolunteers")
+        {
+            global::LightSwitchApplication.SearchVolunteers.DetailsClass.Initialize(this);
+        }
+
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public static SearchVolunteers CreateInstance()
+        {
+            return new global::LightSwitchApplication.SearchVolunteers(
+            );
+        }
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_InitializeDataWorkspace(global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_Created();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_Activated();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_Saving(ref bool handled);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_Saved();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_Closing(ref bool cancel);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteers_SaveError(global::System.Exception exception, ref bool handled);
+     
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.Application Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)((global::Microsoft.LightSwitch.Details.Client.IScreenDetails)this.Details).DataWorkspace;
+            }
+        }
+        
+        #endregion
+ 
+        partial void Volunteers_SelectionChanged();
+
+        partial void Volunteers_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Volunteers_Loaded(bool succeeded);
+
+        /// <summary>
+        /// Gets the Volunteers visual collection. The collection contains all records currently shown on the respective list or grid control.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.Volunteer> Volunteers
+        {
+            get
+            {
+                return global::LightSwitchApplication.SearchVolunteers.DetailsClass.GetValue(this, global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties.Volunteers);
+            }
+        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Volunteers_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
+ 
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed class DetailsClass
+            : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySet, global::LightSwitchApplication.SearchVolunteers.DetailsClass.CommandSet, global::LightSwitchApplication.SearchVolunteers.DetailsClass.MethodSet>
+        {
+
+            static DetailsClass()
+            {
+                var initializePropertyEntry = global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties.Volunteers;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass>.Entry
+                __SearchVolunteersEntry = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass>.Entry(
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeInitializeDataWorkspace,
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeSavingEvent,
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeSavedEvent,
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeClosingEvent,
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeCreated,
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeActivated,
+                    global::LightSwitchApplication.SearchVolunteers.DetailsClass.__SearchVolunteers_InvokeSaveErrorEvent);
+            private static void __SearchVolunteers_InvokeInitializeDataWorkspace(global::LightSwitchApplication.SearchVolunteers s, global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo)
+            {
+                s.SearchVolunteers_InitializeDataWorkspace(saveChangesTo);
+            }
+            private static bool __SearchVolunteers_InvokeSavingEvent(global::LightSwitchApplication.SearchVolunteers s)
+            {
+                bool handled = false;
+                s.SearchVolunteers_Saving(ref handled);
+                return handled;
+            }
+            private static void __SearchVolunteers_InvokeSavedEvent(global::LightSwitchApplication.SearchVolunteers s)
+            {
+                s.SearchVolunteers_Saved();
+            }
+            private static bool __SearchVolunteers_InvokeClosingEvent(global::LightSwitchApplication.SearchVolunteers s)
+            {
+                bool cancel = false;
+                s.SearchVolunteers_Closing(ref cancel);
+                return cancel;
+            }
+            private static void __SearchVolunteers_InvokeCreated(global::LightSwitchApplication.SearchVolunteers s)
+            {
+                s.SearchVolunteers_Created();
+            }
+            private static void __SearchVolunteers_InvokeActivated(global::LightSwitchApplication.SearchVolunteers s)
+            {
+                s.SearchVolunteers_Activated();
+            }
+            private static bool __SearchVolunteers_InvokeSaveErrorEvent(global::LightSwitchApplication.SearchVolunteers s, global::System.Exception ex)
+            {
+                bool handled = false;
+                s.SearchVolunteers_SaveError(ex, ref handled);
+                return handled;
+            }
+
+            public DetailsClass() : base()
+            {
+            }
+
+            public new global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySet Properties
+            {
+                get
+                {
+                    return base.Properties;
+                }
+            }
+
+            public new global::LightSwitchApplication.SearchVolunteers.DetailsClass.CommandSet Commands
+            {
+                get
+                {
+                    return base.Commands;
+                }
+            }
+
+            public new global::LightSwitchApplication.SearchVolunteers.DetailsClass.MethodSet Methods
+            {
+                get
+                {
+                    return base.Methods;
+                }
+            }
+
+            private global::Microsoft.LightSwitch.IDataServiceQueryable VolunteersQuery()
+            {
+                return this.Screen.DataWorkspace.SceneCRMData.Volunteers;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.Volunteer>.Data _Volunteers;
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class PropertySet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenPropertySet<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass>
+            {
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.Volunteer> Volunteers
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.Volunteer>)base.GetItem(global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties.Volunteers);
+                    }
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class CommandSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class MethodSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class PropertySetProperties
+            {
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.Volunteer>.Entry
+                    Volunteers = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.Volunteer>.Entry(
+                        "Volunteers",
+                        global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties._Volunteers_Stub,
+                        global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties._Volunteers_Validate,
+                        global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties._Volunteers_CreateQuery,
+                        global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties._Volunteers_SelectionChanged,
+                        global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties._Volunteers_OnCollectionChanged,
+                        global::LightSwitchApplication.SearchVolunteers.DetailsClass.PropertySetProperties._Volunteers_OnLoaded);
+                private static void _Volunteers_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteers, global::LightSwitchApplication.SearchVolunteers.DetailsClass, global::LightSwitchApplication.Volunteer>.Data> c, global::LightSwitchApplication.SearchVolunteers.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Volunteers, sf);
+                }
+                private static void _Volunteers_Validate(global::LightSwitchApplication.SearchVolunteers s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
+                {
+                    s.Volunteers_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.IDataServiceQueryable _Volunteers_CreateQuery(global::LightSwitchApplication.SearchVolunteers.DetailsClass d, object[] args)
+                {
+                    return d.VolunteersQuery();
+                }
+                private static void _Volunteers_SelectionChanged(global::LightSwitchApplication.SearchVolunteers s)
+                {
+                    s.Volunteers_SelectionChanged();
+                }
+                private static void _Volunteers_OnCollectionChanged(global::LightSwitchApplication.SearchVolunteers s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    s.Volunteers_Changed(e);
+                }
+                private static void _Volunteers_OnLoaded(global::LightSwitchApplication.SearchVolunteers s, bool succeeded)
+                {
+                    s.Volunteers_Loaded(succeeded);
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class CommandSetProperties
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class MethodSetProperties
+            {
+            }
+        }
+    }
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    public sealed partial class SearchVolunteerCapabilities
+        : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass>
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private SearchVolunteerCapabilities() : base("LightSwitchApplication:SearchVolunteerCapabilities")
+        {
+            global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.Initialize(this);
+        }
+
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public static SearchVolunteerCapabilities CreateInstance()
+        {
+            return new global::LightSwitchApplication.SearchVolunteerCapabilities(
+            );
+        }
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_InitializeDataWorkspace(global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_Created();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_Activated();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_Saving(ref bool handled);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_Saved();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_Closing(ref bool cancel);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchVolunteerCapabilities_SaveError(global::System.Exception exception, ref bool handled);
+     
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.Application Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)((global::Microsoft.LightSwitch.Details.Client.IScreenDetails)this.Details).DataWorkspace;
+            }
+        }
+        
+        #endregion
+ 
+        partial void VolunteerCapabilities_SelectionChanged();
+
+        partial void VolunteerCapabilities_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VolunteerCapabilities_Loaded(bool succeeded);
+
+        partial void Jobs_SelectionChanged();
+
+        partial void Jobs_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Jobs_Loaded(bool succeeded);
+
+        /// <summary>
+        /// Gets the VolunteerCapabilities visual collection. The collection contains all records currently shown on the respective list or grid control.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.VolunteerCapability> VolunteerCapabilities
+        {
+            get
+            {
+                return global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.GetValue(this, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties.VolunteerCapabilities);
+            }
+        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VolunteerCapabilities_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
+ 
+        /// <summary>
+        /// Gets the Jobs visual collection. The collection contains all records currently shown on the respective list or grid control.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.Job> Jobs
+        {
+            get
+            {
+                return global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.GetValue(this, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties.Jobs);
+            }
+        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Jobs_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
+ 
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed class DetailsClass
+            : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySet, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.CommandSet, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.MethodSet>
+        {
+
+            static DetailsClass()
+            {
+                var initializePropertyEntry = global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties.VolunteerCapabilities;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass>.Entry
+                __SearchVolunteerCapabilitiesEntry = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass>.Entry(
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeInitializeDataWorkspace,
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeSavingEvent,
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeSavedEvent,
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeClosingEvent,
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeCreated,
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeActivated,
+                    global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.__SearchVolunteerCapabilities_InvokeSaveErrorEvent);
+            private static void __SearchVolunteerCapabilities_InvokeInitializeDataWorkspace(global::LightSwitchApplication.SearchVolunteerCapabilities s, global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo)
+            {
+                s.SearchVolunteerCapabilities_InitializeDataWorkspace(saveChangesTo);
+            }
+            private static bool __SearchVolunteerCapabilities_InvokeSavingEvent(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+            {
+                bool handled = false;
+                s.SearchVolunteerCapabilities_Saving(ref handled);
+                return handled;
+            }
+            private static void __SearchVolunteerCapabilities_InvokeSavedEvent(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+            {
+                s.SearchVolunteerCapabilities_Saved();
+            }
+            private static bool __SearchVolunteerCapabilities_InvokeClosingEvent(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+            {
+                bool cancel = false;
+                s.SearchVolunteerCapabilities_Closing(ref cancel);
+                return cancel;
+            }
+            private static void __SearchVolunteerCapabilities_InvokeCreated(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+            {
+                s.SearchVolunteerCapabilities_Created();
+            }
+            private static void __SearchVolunteerCapabilities_InvokeActivated(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+            {
+                s.SearchVolunteerCapabilities_Activated();
+            }
+            private static bool __SearchVolunteerCapabilities_InvokeSaveErrorEvent(global::LightSwitchApplication.SearchVolunteerCapabilities s, global::System.Exception ex)
+            {
+                bool handled = false;
+                s.SearchVolunteerCapabilities_SaveError(ex, ref handled);
+                return handled;
+            }
+
+            public DetailsClass() : base()
+            {
+            }
+
+            public new global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySet Properties
+            {
+                get
+                {
+                    return base.Properties;
+                }
+            }
+
+            public new global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.CommandSet Commands
+            {
+                get
+                {
+                    return base.Commands;
+                }
+            }
+
+            public new global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.MethodSet Methods
+            {
+                get
+                {
+                    return base.Methods;
+                }
+            }
+
+            private global::Microsoft.LightSwitch.IDataServiceQueryable VolunteerCapabilitiesQuery(global::System.Nullable<int> JobId)
+            {
+                return global::Microsoft.LightSwitch.DataServiceQueryable.Include(
+                    global::Microsoft.LightSwitch.DataServiceQueryable.Include(
+                        global::Microsoft.LightSwitch.DataServiceQueryable.Where(
+                            this.Screen.DataWorkspace.SceneCRMData.VolunteerCapabilities,
+                            (v) => (JobId.HasValue && (v.Job.JobId == JobId))),
+                        "Job"),
+                    "Volunteer");
+            }
+
+            private global::Microsoft.LightSwitch.IDataServiceQueryable JobsQuery()
+            {
+                return this.Screen.DataWorkspace.SceneCRMData.Jobs;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.VolunteerCapability>.Data _VolunteerCapabilities;
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.Job>.Data _Jobs;
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class PropertySet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenPropertySet<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass>
+            {
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.VolunteerCapability> VolunteerCapabilities
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.VolunteerCapability>)base.GetItem(global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties.VolunteerCapabilities);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.Job> Jobs
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.Job>)base.GetItem(global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties.Jobs);
+                    }
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class CommandSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class MethodSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class PropertySetProperties
+            {
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.VolunteerCapability>.Entry
+                    VolunteerCapabilities = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.VolunteerCapability>.Entry(
+                        "VolunteerCapabilities",
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._VolunteerCapabilities_Stub,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._VolunteerCapabilities_Validate,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._VolunteerCapabilities_CreateQuery,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._VolunteerCapabilities_SelectionChanged,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._VolunteerCapabilities_OnCollectionChanged,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._VolunteerCapabilities_OnLoaded);
+                private static void _VolunteerCapabilities_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.VolunteerCapability>.Data> c, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass d, object sf)
+                {
+                    c(d, ref d._VolunteerCapabilities, sf);
+                }
+                private static void _VolunteerCapabilities_Validate(global::LightSwitchApplication.SearchVolunteerCapabilities s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
+                {
+                    s.VolunteerCapabilities_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.IDataServiceQueryable _VolunteerCapabilities_CreateQuery(global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass d, object[] args)
+                {
+                    return d.VolunteerCapabilitiesQuery((global::System.Nullable<int>)args[0]);
+                }
+                private static void _VolunteerCapabilities_SelectionChanged(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+                {
+                    s.VolunteerCapabilities_SelectionChanged();
+                }
+                private static void _VolunteerCapabilities_OnCollectionChanged(global::LightSwitchApplication.SearchVolunteerCapabilities s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    s.VolunteerCapabilities_Changed(e);
+                }
+                private static void _VolunteerCapabilities_OnLoaded(global::LightSwitchApplication.SearchVolunteerCapabilities s, bool succeeded)
+                {
+                    s.VolunteerCapabilities_Loaded(succeeded);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.Job>.Entry
+                    Jobs = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.Job>.Entry(
+                        "Jobs",
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._Jobs_Stub,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._Jobs_Validate,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._Jobs_CreateQuery,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._Jobs_SelectionChanged,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._Jobs_OnCollectionChanged,
+                        global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass.PropertySetProperties._Jobs_OnLoaded);
+                private static void _Jobs_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.SearchVolunteerCapabilities, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass, global::LightSwitchApplication.Job>.Data> c, global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Jobs, sf);
+                }
+                private static void _Jobs_Validate(global::LightSwitchApplication.SearchVolunteerCapabilities s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
+                {
+                    s.Jobs_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.IDataServiceQueryable _Jobs_CreateQuery(global::LightSwitchApplication.SearchVolunteerCapabilities.DetailsClass d, object[] args)
+                {
+                    return d.JobsQuery();
+                }
+                private static void _Jobs_SelectionChanged(global::LightSwitchApplication.SearchVolunteerCapabilities s)
+                {
+                    s.Jobs_SelectionChanged();
+                }
+                private static void _Jobs_OnCollectionChanged(global::LightSwitchApplication.SearchVolunteerCapabilities s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    s.Jobs_Changed(e);
+                }
+                private static void _Jobs_OnLoaded(global::LightSwitchApplication.SearchVolunteerCapabilities s, bool succeeded)
+                {
+                    s.Jobs_Loaded(succeeded);
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class CommandSetProperties
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class MethodSetProperties
+            {
+            }
+        }
+    }
 }
