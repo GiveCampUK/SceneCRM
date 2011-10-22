@@ -2937,6 +2937,30 @@ namespace SceneCRMData.Implementation
         private global::System.String _Surname;
         partial void OnSurnameChanging(global::System.String value);
         partial void OnSurnameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String PerformanceAttended
+        {
+            get
+            {
+                return _PerformanceAttended;
+            }
+            set
+            {
+                OnPerformanceAttendedChanging(value);
+                ReportPropertyChanging("PerformanceAttended");
+                _PerformanceAttended = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("PerformanceAttended");
+                OnPerformanceAttendedChanged();
+            }
+        }
+        private global::System.String _PerformanceAttended;
+        partial void OnPerformanceAttendedChanging(global::System.String value);
+        partial void OnPerformanceAttendedChanged();
 
         #endregion
     

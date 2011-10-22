@@ -151,6 +151,30 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string PerformanceAttended
+        {
+            get
+            {
+                return global::LightSwitchApplication.Volunteer.DetailsClass.GetValue(this, global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties.PerformanceAttended);
+            }
+            set
+            {
+                global::LightSwitchApplication.Volunteer.DetailsClass.SetValue(this, global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties.PerformanceAttended, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PerformanceAttended_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PerformanceAttended_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PerformanceAttended_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.CourseVolunteer> CourseVolunteers
         {
             get
@@ -367,6 +391,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string> PerformanceAttended
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties.PerformanceAttended) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, global::LightSwitchApplication.CourseVolunteer> CourseVolunteers
                 {
                     get
@@ -416,6 +448,7 @@ namespace LightSwitchApplication
                 new int VolunteerId { get; }
                 new string FirstName { get; set; }
                 new string Surname { get; set; }
+                new string PerformanceAttended { get; set; }
                 new global::System.Collections.IEnumerable CourseVolunteers { get; }
                 new global::System.Collections.IEnumerable CrbChecks { get; }
                 new global::System.Collections.IEnumerable PlayVolunteers { get; }
@@ -538,6 +571,43 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string>.Entry
+                    PerformanceAttended = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string>.Entry(
+                        "PerformanceAttended",
+                        global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties._PerformanceAttended_Stub,
+                        global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties._PerformanceAttended_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties._PerformanceAttended_Validate,
+                        global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties._PerformanceAttended_GetImplementationValue,
+                        global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties._PerformanceAttended_SetImplementationValue,
+                        global::LightSwitchApplication.Volunteer.DetailsClass.PropertySetProperties._PerformanceAttended_OnValueChanged);
+                private static void _PerformanceAttended_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Volunteer.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string>.Data> c, global::LightSwitchApplication.Volunteer.DetailsClass d, object sf)
+                {
+                    c(d, ref d._PerformanceAttended, sf);
+                }
+                private static bool _PerformanceAttended_ComputeIsReadOnly(global::LightSwitchApplication.Volunteer e)
+                {
+                    bool result = false;
+                    e.PerformanceAttended_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _PerformanceAttended_Validate(global::LightSwitchApplication.Volunteer e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.PerformanceAttended_Validate(r);
+                }
+                private static string _PerformanceAttended_GetImplementationValue(global::LightSwitchApplication.Volunteer.DetailsClass d)
+                {
+                    return d.ImplementationEntity.PerformanceAttended;
+                }
+                private static void _PerformanceAttended_SetImplementationValue(global::LightSwitchApplication.Volunteer.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.PerformanceAttended = v;
+                }
+                private static void _PerformanceAttended_OnValueChanged(global::LightSwitchApplication.Volunteer e)
+                {
+                    e.PerformanceAttended_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, global::LightSwitchApplication.CourseVolunteer>.Entry
                     CourseVolunteers = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, global::LightSwitchApplication.CourseVolunteer>.Entry(
                         "CourseVolunteers",
@@ -647,6 +717,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string>.Data _Surname;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, string>.Data _PerformanceAttended;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Volunteer, global::LightSwitchApplication.Volunteer.DetailsClass, global::LightSwitchApplication.CourseVolunteer>.Data _CourseVolunteers;

@@ -353,6 +353,7 @@
     <Property Name="VolunteerId" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
     <Property Name="FirstName" Type="String" MaxLength="64" Unicode="false" ConcurrencyMode="Fixed" />
     <Property Name="Surname" Type="String" MaxLength="64" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="PerformanceAttended" Type="String" MaxLength="1024" Unicode="false" ConcurrencyMode="Fixed" />
     <NavigationProperty Name="CourseVolunteers" Relationship="SceneCRMData.FK_CourseVolunteer_Volunteer" ToRole="CourseVolunteer" FromRole="Volunteer" />
     <NavigationProperty Name="CrbChecks" Relationship="SceneCRMData.FK_CrbCheck_Volunteer" ToRole="CrbCheck" FromRole="Volunteer" />
     <NavigationProperty Name="PlayVolunteers" Relationship="SceneCRMData.FK_PlayVolunteer_Volunteer" ToRole="PlayVolunteer" FromRole="Volunteer" />

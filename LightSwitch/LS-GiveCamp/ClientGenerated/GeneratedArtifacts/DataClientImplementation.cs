@@ -2859,6 +2859,27 @@ namespace LightSwitchApplication.Implementation
         }
         private string _Surname;
         
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string PerformanceAttended
+        {
+            get
+            {
+                return this._PerformanceAttended;
+            }
+            set
+            {
+                if (this._PerformanceAttended != value)
+                {
+                    this.RaiseDataMemberChanging("PerformanceAttended");
+                    this.ValidateProperty("PerformanceAttended", value);
+                    this._PerformanceAttended = value;
+                    this.RaiseDataMemberChanged("PerformanceAttended");
+                }
+            }
+        }
+        private string _PerformanceAttended;
+        
         [global::System.ComponentModel.DataAnnotations.Association("FK_CourseVolunteer_Volunteer", "VolunteerId", "VolunteerId")]
         [global::System.Xml.Serialization.XmlIgnore()]
         public global::System.ServiceModel.DomainServices.Client.EntityCollection<CourseVolunteer> CourseVolunteers

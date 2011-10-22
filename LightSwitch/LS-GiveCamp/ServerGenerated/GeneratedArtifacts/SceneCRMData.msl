@@ -132,6 +132,7 @@
           <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="PerformanceAttended" ColumnName="PerformanceAttended" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

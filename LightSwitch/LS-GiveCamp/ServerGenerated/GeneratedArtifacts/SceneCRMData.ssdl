@@ -207,6 +207,7 @@
     <Property Name="VolunteerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="FirstName" Type="varchar" MaxLength="64" />
     <Property Name="Surname" Type="varchar" MaxLength="64" />
+    <Property Name="PerformanceAttended" Type="varchar" MaxLength="1024" />
   </EntityType>
   <EntityType Name="VolunteerCapability">
     <Key>

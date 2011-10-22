@@ -127,14 +127,16 @@
                       PropertyType=":String">
         <EntityProperty.Attributes>
           <Required />
-          <MaxLength Value="16" />
+          <MaxLength Value="16"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="FirstName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -142,7 +144,8 @@
                       PropertyType=":String">
         <EntityProperty.Attributes>
           <Required />
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -247,14 +250,16 @@
                    PropertyType=":String">
         <KeyProperty.Attributes>
           <Required />
-          <MaxLength Value="8" />
+          <MaxLength Value="8"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </KeyProperty.Attributes>
       </KeyProperty>
       <EntityProperty Name="CourseTypeName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -298,7 +303,8 @@
       <EntityProperty Name="Notes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="2048" />
+          <MaxLength Value="2048"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -338,14 +344,16 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="CrbNumber"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="32" />
+          <MaxLength Value="32"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -353,7 +361,8 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -361,7 +370,8 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -369,7 +379,8 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -377,7 +388,8 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -408,7 +420,8 @@
       <EntityProperty Name="Description"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -458,7 +471,8 @@
       <EntityProperty Name="Title"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="128" />
+          <MaxLength Value="128"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -502,7 +516,8 @@
       <EntityProperty Name="Notes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="2048" />
+          <MaxLength Value="2048"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -541,7 +556,8 @@
       <EntityProperty Name="Title"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -585,7 +601,8 @@
       <EntityProperty Name="Notes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="2048" />
+          <MaxLength Value="2048"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -617,7 +634,8 @@
                       PropertyType=":String">
         <EntityProperty.Attributes>
           <Required />
-          <MaxLength Value="128" />
+          <MaxLength Value="128"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="principal_id"
@@ -644,7 +662,7 @@
       <EntityProperty Name="definition"
                       PropertyType=":Binary?">
         <EntityProperty.Attributes>
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -670,7 +688,8 @@
       <EntityProperty Name="TermName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="16" />
+          <MaxLength Value="16"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -701,14 +720,16 @@
       <EntityProperty Name="FirstName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Surname"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="64" />
+          <MaxLength Value="64"
+                     IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -732,6 +753,13 @@
                           FromEnd="Volunteer"
                           Name="VolunteerCapabilities"
                           ToEnd="VolunteerCapability" />
+      <EntityProperty Name="PerformanceAttended"
+                      PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength Value="1024" />
+          <AnsiConstraint />
+        </EntityProperty.Attributes>
+      </EntityProperty>
     </EntityType.Properties>
   </EntityType>
 
@@ -2735,588 +2763,11 @@
   </EntityContainer>
 
   
-  <DataService DataProvider="EntityFrameworkDataProvider"
-               EntityContainer="SceneCRMData"
-               Name="SceneCRMDataDataService">
-    <DataService.ConnectionProperties>
-      <ConnectionProperty Name="DataProviderName"
-                          Value="91510608-8809-4020-8897-fba057e22d54" />
-      <ConnectionProperty Name="DataSourceName"
-                          Value="067ea0d9-ba62-43f7-9106-34930c60c528" />
-      <ConnectionProperty Name="ProviderInvariantName"
-                          Value="System.Data.SqlClient" />
-      <ConnectionProperty Name="ConnectionStringGuid"
-                          Value="f6646754-cccf-4f64-8c6d-f25e8e4e9d29" />
-      <ConnectionProperty Name="ProviderManifestToken"
-                          Value="2008" />
-    </DataService.ConnectionProperties>
-    <EntitySetMapping EntitySet="Children">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Child" />
-        <SsdlProperty Name="ChildId"
-                      Nullable="False"
-                      Property="Child/Properties[ChildId]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty MaxLength="16"
-                      Name="Reference"
-                      Nullable="False"
-                      Property="Child/Properties[Reference]"
-                      Type="varchar" />
-        <SsdlProperty MaxLength="64"
-                      Name="FirstName"
-                      Nullable="True"
-                      Property="Child/Properties[FirstName]"
-                      Type="varchar" />
-        <SsdlProperty MaxLength="64"
-                      Name="Surname"
-                      Nullable="False"
-                      Property="Child/Properties[Surname]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="Courses">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Course" />
-        <SsdlProperty Name="CourseId"
-                      Nullable="False"
-                      Property="Course/Properties[CourseId]"
-                      Type="int" />
-        <SsdlProperty Name="Year"
-                      Nullable="True"
-                      Property="Course/Properties[Year]"
-                      Type="int" />
-        <SsdlForeignKeyProperty MaxLength="8"
-                                Name="CourseTypeCode"
-                                Nullable="True"
-                                PropertyName="CourseTypeCode"
-                                Type="varchar" />
-        <SsdlForeignKeyProperty Name="TermId"
-                                Nullable="True"
-                                PropertyName="TermId"
-                                Type="int" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="CourseAttendances">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="CourseAttendance" />
-        <SsdlProperty Name="ChildId"
-                      Nullable="False"
-                      Property="CourseAttendance/Properties[ChildId]"
-                      Type="int" />
-        <SsdlProperty Name="CourseId"
-                      Nullable="False"
-                      Property="CourseAttendance/Properties[CourseId]"
-                      Type="int" />
-        <SsdlProperty Name="Completed"
-                      Nullable="True"
-                      Property="CourseAttendance/Properties[Completed]"
-                      Type="bit" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="CourseTypes">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="CourseType" />
-        <SsdlProperty MaxLength="8"
-                      Name="CourseTypeCode"
-                      Nullable="False"
-                      Property="CourseType/Properties[CourseTypeCode]"
-                      Type="varchar" />
-        <SsdlProperty MaxLength="64"
-                      Name="CourseTypeName"
-                      Nullable="True"
-                      Property="CourseType/Properties[CourseTypeName]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="CourseVolunteers">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="CourseVolunteer" />
-        <SsdlProperty Name="CourseId"
-                      Nullable="False"
-                      Property="CourseVolunteer/Properties[CourseId]"
-                      Type="int" />
-        <SsdlProperty Name="VolunteerId"
-                      Nullable="False"
-                      Property="CourseVolunteer/Properties[VolunteerId]"
-                      Type="int" />
-        <SsdlProperty Name="JobId"
-                      Nullable="False"
-                      Property="CourseVolunteer/Properties[JobId]"
-                      Type="int" />
-        <SsdlProperty MaxLength="2048"
-                      Name="Notes"
-                      Nullable="True"
-                      Property="CourseVolunteer/Properties[Notes]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="CrbChecks">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="CrbCheck" />
-        <SsdlProperty Name="CrbCheckId"
-                      Nullable="False"
-                      Property="CrbCheck/Properties[CrbCheckId]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty Name="CheckDate"
-                      Nullable="True"
-                      Property="CrbCheck/Properties[CheckDate]"
-                      Type="datetime" />
-        <SsdlProperty MaxLength="32"
-                      Name="CrbNumber"
-                      Nullable="True"
-                      Property="CrbCheck/Properties[CrbNumber]"
-                      Type="varchar" />
-        <SsdlProperty Name="OnlineFormSent"
-                      Nullable="True"
-                      Property="CrbCheck/Properties[OnlineFormSent]"
-                      Type="datetime" />
-        <SsdlProperty Name="FormFilledOut"
-                      Nullable="True"
-                      Property="CrbCheck/Properties[FormFilledOut]"
-                      Type="datetime" />
-        <SsdlProperty Name="DateCheckExpires"
-                      Nullable="True"
-                      Property="CrbCheck/Properties[DateCheckExpires]"
-                      Type="datetime" />
-        <SsdlProperty Name="IdComplete"
-                      Nullable="True"
-                      Property="CrbCheck/Properties[IdComplete]"
-                      Type="datetime" />
-        <SsdlForeignKeyProperty Name="VolunteerId"
-                                Nullable="True"
-                                PropertyName="VolunteerId"
-                                Type="int" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="Jobs">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Job" />
-        <SsdlProperty Name="JobId"
-                      Nullable="False"
-                      Property="Job/Properties[JobId]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty MaxLength="64"
-                      Name="Description"
-                      Nullable="True"
-                      Property="Job/Properties[Description]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="Plays">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Play" />
-        <SsdlProperty Name="PlayId"
-                      Nullable="False"
-                      Property="Play/Properties[PlayId]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty Name="ChildId"
-                      Nullable="False"
-                      Property="Play/Properties[ChildId]"
-                      Type="int" />
-        <SsdlProperty MaxLength="128"
-                      Name="Title"
-                      Nullable="True"
-                      Property="Play/Properties[Title]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="PlayVolunteers">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="PlayVolunteer" />
-        <SsdlProperty Name="PlayId"
-                      Nullable="False"
-                      Property="PlayVolunteer/Properties[PlayId]"
-                      Type="int" />
-        <SsdlProperty Name="VolunteerId"
-                      Nullable="False"
-                      Property="PlayVolunteer/Properties[VolunteerId]"
-                      Type="int" />
-        <SsdlProperty Name="JobId"
-                      Nullable="False"
-                      Property="PlayVolunteer/Properties[JobId]"
-                      Type="int" />
-        <SsdlProperty MaxLength="2048"
-                      Name="Notes"
-                      Nullable="True"
-                      Property="PlayVolunteer/Properties[Notes]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="Productions">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Production" />
-        <SsdlProperty Name="ProductionId"
-                      Nullable="False"
-                      Property="Production/Properties[ProductionId]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty MaxLength="64"
-                      Name="Title"
-                      Nullable="True"
-                      Property="Production/Properties[Title]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="ProductionVolunteers">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="ProductionVolunteer" />
-        <SsdlProperty Name="VolunteerId"
-                      Nullable="False"
-                      Property="ProductionVolunteer/Properties[VolunteerId]"
-                      Type="int" />
-        <SsdlProperty Name="JobId"
-                      Nullable="False"
-                      Property="ProductionVolunteer/Properties[JobId]"
-                      Type="int" />
-        <SsdlProperty Name="ProductionId"
-                      Nullable="False"
-                      Property="ProductionVolunteer/Properties[ProductionId]"
-                      Type="int" />
-        <SsdlProperty MaxLength="2048"
-                      Name="Notes"
-                      Nullable="True"
-                      Property="ProductionVolunteer/Properties[Notes]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="sysdiagrams">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="sysdiagrams" />
-        <SsdlProperty MaxLength="128"
-                      Name="name"
-                      Nullable="False"
-                      Property="sysdiagram/Properties[name]"
-                      Type="nvarchar" />
-        <SsdlProperty Name="principal_id"
-                      Nullable="False"
-                      Property="sysdiagram/Properties[principal_id]"
-                      Type="int" />
-        <SsdlProperty Name="diagram_id"
-                      Nullable="False"
-                      Property="sysdiagram/Properties[diagram_id]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty Name="version"
-                      Nullable="True"
-                      Property="sysdiagram/Properties[version]"
-                      Type="int" />
-        <SsdlProperty Name="definition"
-                      Nullable="True"
-                      Property="sysdiagram/Properties[definition]"
-                      Type="varbinary(max)" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="Terms">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Term" />
-        <SsdlProperty Name="TermId"
-                      Nullable="False"
-                      Property="Term/Properties[TermId]"
-                      Type="int" />
-        <SsdlProperty MaxLength="16"
-                      Name="TermName"
-                      Nullable="True"
-                      Property="Term/Properties[TermName]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="Volunteers">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="Volunteer" />
-        <SsdlProperty Name="VolunteerId"
-                      Nullable="False"
-                      Property="Volunteer/Properties[VolunteerId]"
-                      StoreGeneratedPattern="Identity"
-                      Type="int" />
-        <SsdlProperty MaxLength="64"
-                      Name="FirstName"
-                      Nullable="True"
-                      Property="Volunteer/Properties[FirstName]"
-                      Type="varchar" />
-        <SsdlProperty MaxLength="64"
-                      Name="Surname"
-                      Nullable="True"
-                      Property="Volunteer/Properties[Surname]"
-                      Type="varchar" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <EntitySetMapping EntitySet="VolunteerCapabilities">
-      <EntitySetMapping.Attributes>
-        <SsdlEntitySet Schema="dbo"
-                       Table="VolunteerCapability" />
-        <SsdlProperty Name="VolunteerId"
-                      Nullable="False"
-                      Property="VolunteerCapability/Properties[VolunteerId]"
-                      Type="int" />
-        <SsdlProperty Name="JobId"
-                      Nullable="False"
-                      Property="VolunteerCapability/Properties[JobId]"
-                      Type="int" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
-    <AssociationSetMapping AssociationSet="FK_Course_CourseType">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_Course_CourseType" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_CourseType]/Members[CourseType]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="CourseTypeCode" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_CourseType]/Members[Course]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="CourseTypeCode" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_Course_Term">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_Course_Term" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_Term]/Members[Term]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="TermId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_Term]/Members[Course]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="TermId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_CourseAttendance_Child">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_CourseAttendance_Child" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Child]/Members[Child]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="ChildId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Child]/Members[CourseAttendance]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="ChildId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_CourseAttendance_Course">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_CourseAttendance_Course" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Course]/Members[Course]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="CourseId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Course]/Members[CourseAttendance]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="CourseId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_CourseVolunteer_Course">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_CourseVolunteer_Course" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Course]/Members[Course]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="CourseId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Course]/Members[CourseVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="CourseId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_CourseVolunteer_Job">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_CourseVolunteer_Job" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Job]/Members[Job]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Job]/Members[CourseVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_CourseVolunteer_Volunteer">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_CourseVolunteer_Volunteer" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Volunteer]/Members[Volunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Volunteer]/Members[CourseVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_CrbCheck_Volunteer">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_CrbCheck_Volunteer" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CrbCheck_Volunteer]/Members[Volunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CrbCheck_Volunteer]/Members[CrbCheck]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_PlayVolunteer_Job">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_PlayVolunteer_Job" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Job]/Members[Job]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Job]/Members[PlayVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_PlayVolunteer_Play">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_PlayVolunteer_Play" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Play]/Members[Play]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="PlayId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Play]/Members[PlayVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="PlayId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_PlayVolunteer_Volunteer">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_PlayVolunteer_Volunteer" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Volunteer]/Members[Volunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Volunteer]/Members[PlayVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_ProductionVolunteer_Job">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_ProductionVolunteer_Job" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Job]/Members[Job]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Job]/Members[ProductionVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_ProductionVolunteer_Production">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_ProductionVolunteer_Production" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Production]/Members[Production]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="ProductionId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Production]/Members[ProductionVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="ProductionId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_ProductionVolunteer_Volunteer">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_ProductionVolunteer_Volunteer" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Volunteer]/Members[Volunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Volunteer]/Members[ProductionVolunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_VolunteerCapability_Job">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_VolunteerCapability_Job" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Job]/Members[Job]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Job]/Members[VolunteerCapability]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="JobId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping AssociationSet="FK_VolunteerCapability_Volunteer">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet Name="FK_VolunteerCapability_Volunteer" />
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Volunteer]/Members[Volunteer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Volunteer]/Members[VolunteerCapability]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef Name="VolunteerId" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-  </DataService>
+  
 
   <Screen Name="ChildrenGrid">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -3515,7 +2966,7 @@
 
   <Screen Name="CoursesGrid">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -3732,7 +3183,7 @@
 
   <Screen Name="VolunteersGrid">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -3920,7 +3371,7 @@
 
   <Screen Name="PlaysGrid">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -4108,7 +3559,7 @@
 
   <Screen Name="ProductionsGrid">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -4284,7 +3735,7 @@
   </Screen>
   <Screen Name="SearchVolunteers">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -4456,6 +3907,17 @@
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
               </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="PerformanceAttended">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="Volunteer/Properties[PerformanceAttended]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
             </ContentItem>
           </ContentItem>
         </ContentItem>
@@ -4465,7 +3927,7 @@
 
   <Screen Name="SearchVolunteerCapabilities">
     <Screen.Attributes>
-      <SaveChangesTo DataService="SceneCRMDataDataService" />
+      <SaveChangesTo DataService="SceneCRMDataDataService1" />
     </Screen.Attributes>
     <Screen.Methods>
       <ScreenMethod Name="Save">
@@ -4796,6 +4258,590 @@
       </ContentItem>
     </Screen.RootContentItem>
   </Screen>
+  <DataService DataProvider="EntityFrameworkDataProvider"
+               EntityContainer="SceneCRMData"
+               Name="SceneCRMDataDataService1">
+    <DataService.ConnectionProperties>
+      <ConnectionProperty Name="DataProviderName"
+                          Value="91510608-8809-4020-8897-fba057e22d54" />
+      <ConnectionProperty Name="DataSourceName"
+                          Value="067ea0d9-ba62-43f7-9106-34930c60c528" />
+      <ConnectionProperty Name="ProviderInvariantName"
+                          Value="System.Data.SqlClient" />
+      <ConnectionProperty Name="ConnectionStringGuid"
+                          Value="f6646754-cccf-4f64-8c6d-f25e8e4e9d29" />
+      <ConnectionProperty Name="ProviderManifestToken"
+                          Value="2008" />
+    </DataService.ConnectionProperties>
+    <EntitySetMapping EntitySet="Children">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Child" />
+        <SsdlProperty Name="ChildId"
+                      Nullable="False"
+                      Property="Child/Properties[ChildId]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty MaxLength="16"
+                      Name="Reference"
+                      Nullable="False"
+                      Property="Child/Properties[Reference]"
+                      Type="varchar" />
+        <SsdlProperty MaxLength="64"
+                      Name="FirstName"
+                      Nullable="True"
+                      Property="Child/Properties[FirstName]"
+                      Type="varchar" />
+        <SsdlProperty MaxLength="64"
+                      Name="Surname"
+                      Nullable="False"
+                      Property="Child/Properties[Surname]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="Courses">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Course" />
+        <SsdlProperty Name="CourseId"
+                      Nullable="False"
+                      Property="Course/Properties[CourseId]"
+                      Type="int" />
+        <SsdlProperty Name="Year"
+                      Nullable="True"
+                      Property="Course/Properties[Year]"
+                      Type="int" />
+        <SsdlForeignKeyProperty MaxLength="8"
+                                Name="CourseTypeCode"
+                                Nullable="True"
+                                PropertyName="CourseTypeCode"
+                                Type="varchar" />
+        <SsdlForeignKeyProperty Name="TermId"
+                                Nullable="True"
+                                PropertyName="TermId"
+                                Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="CourseAttendances">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="CourseAttendance" />
+        <SsdlProperty Name="ChildId"
+                      Nullable="False"
+                      Property="CourseAttendance/Properties[ChildId]"
+                      Type="int" />
+        <SsdlProperty Name="CourseId"
+                      Nullable="False"
+                      Property="CourseAttendance/Properties[CourseId]"
+                      Type="int" />
+        <SsdlProperty Name="Completed"
+                      Nullable="True"
+                      Property="CourseAttendance/Properties[Completed]"
+                      Type="bit" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="CourseTypes">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="CourseType" />
+        <SsdlProperty MaxLength="8"
+                      Name="CourseTypeCode"
+                      Nullable="False"
+                      Property="CourseType/Properties[CourseTypeCode]"
+                      Type="varchar" />
+        <SsdlProperty MaxLength="64"
+                      Name="CourseTypeName"
+                      Nullable="True"
+                      Property="CourseType/Properties[CourseTypeName]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="CourseVolunteers">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="CourseVolunteer" />
+        <SsdlProperty Name="CourseId"
+                      Nullable="False"
+                      Property="CourseVolunteer/Properties[CourseId]"
+                      Type="int" />
+        <SsdlProperty Name="VolunteerId"
+                      Nullable="False"
+                      Property="CourseVolunteer/Properties[VolunteerId]"
+                      Type="int" />
+        <SsdlProperty Name="JobId"
+                      Nullable="False"
+                      Property="CourseVolunteer/Properties[JobId]"
+                      Type="int" />
+        <SsdlProperty MaxLength="2048"
+                      Name="Notes"
+                      Nullable="True"
+                      Property="CourseVolunteer/Properties[Notes]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="CrbChecks">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="CrbCheck" />
+        <SsdlProperty Name="CrbCheckId"
+                      Nullable="False"
+                      Property="CrbCheck/Properties[CrbCheckId]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty Name="CheckDate"
+                      Nullable="True"
+                      Property="CrbCheck/Properties[CheckDate]"
+                      Type="datetime" />
+        <SsdlProperty MaxLength="32"
+                      Name="CrbNumber"
+                      Nullable="True"
+                      Property="CrbCheck/Properties[CrbNumber]"
+                      Type="varchar" />
+        <SsdlProperty Name="OnlineFormSent"
+                      Nullable="True"
+                      Property="CrbCheck/Properties[OnlineFormSent]"
+                      Type="datetime" />
+        <SsdlProperty Name="FormFilledOut"
+                      Nullable="True"
+                      Property="CrbCheck/Properties[FormFilledOut]"
+                      Type="datetime" />
+        <SsdlProperty Name="DateCheckExpires"
+                      Nullable="True"
+                      Property="CrbCheck/Properties[DateCheckExpires]"
+                      Type="datetime" />
+        <SsdlProperty Name="IdComplete"
+                      Nullable="True"
+                      Property="CrbCheck/Properties[IdComplete]"
+                      Type="datetime" />
+        <SsdlForeignKeyProperty Name="VolunteerId"
+                                Nullable="True"
+                                PropertyName="VolunteerId"
+                                Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="Jobs">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Job" />
+        <SsdlProperty Name="JobId"
+                      Nullable="False"
+                      Property="Job/Properties[JobId]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty MaxLength="64"
+                      Name="Description"
+                      Nullable="True"
+                      Property="Job/Properties[Description]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="Plays">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Play" />
+        <SsdlProperty Name="PlayId"
+                      Nullable="False"
+                      Property="Play/Properties[PlayId]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty Name="ChildId"
+                      Nullable="False"
+                      Property="Play/Properties[ChildId]"
+                      Type="int" />
+        <SsdlProperty MaxLength="128"
+                      Name="Title"
+                      Nullable="True"
+                      Property="Play/Properties[Title]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="PlayVolunteers">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="PlayVolunteer" />
+        <SsdlProperty Name="PlayId"
+                      Nullable="False"
+                      Property="PlayVolunteer/Properties[PlayId]"
+                      Type="int" />
+        <SsdlProperty Name="VolunteerId"
+                      Nullable="False"
+                      Property="PlayVolunteer/Properties[VolunteerId]"
+                      Type="int" />
+        <SsdlProperty Name="JobId"
+                      Nullable="False"
+                      Property="PlayVolunteer/Properties[JobId]"
+                      Type="int" />
+        <SsdlProperty MaxLength="2048"
+                      Name="Notes"
+                      Nullable="True"
+                      Property="PlayVolunteer/Properties[Notes]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="Productions">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Production" />
+        <SsdlProperty Name="ProductionId"
+                      Nullable="False"
+                      Property="Production/Properties[ProductionId]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty MaxLength="64"
+                      Name="Title"
+                      Nullable="True"
+                      Property="Production/Properties[Title]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="ProductionVolunteers">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="ProductionVolunteer" />
+        <SsdlProperty Name="VolunteerId"
+                      Nullable="False"
+                      Property="ProductionVolunteer/Properties[VolunteerId]"
+                      Type="int" />
+        <SsdlProperty Name="JobId"
+                      Nullable="False"
+                      Property="ProductionVolunteer/Properties[JobId]"
+                      Type="int" />
+        <SsdlProperty Name="ProductionId"
+                      Nullable="False"
+                      Property="ProductionVolunteer/Properties[ProductionId]"
+                      Type="int" />
+        <SsdlProperty MaxLength="2048"
+                      Name="Notes"
+                      Nullable="True"
+                      Property="ProductionVolunteer/Properties[Notes]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="sysdiagrams">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="sysdiagrams" />
+        <SsdlProperty MaxLength="128"
+                      Name="name"
+                      Nullable="False"
+                      Property="sysdiagram/Properties[name]"
+                      Type="nvarchar" />
+        <SsdlProperty Name="principal_id"
+                      Nullable="False"
+                      Property="sysdiagram/Properties[principal_id]"
+                      Type="int" />
+        <SsdlProperty Name="diagram_id"
+                      Nullable="False"
+                      Property="sysdiagram/Properties[diagram_id]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty Name="version"
+                      Nullable="True"
+                      Property="sysdiagram/Properties[version]"
+                      Type="int" />
+        <SsdlProperty Name="definition"
+                      Nullable="True"
+                      Property="sysdiagram/Properties[definition]"
+                      Type="varbinary(max)" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="Terms">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Term" />
+        <SsdlProperty Name="TermId"
+                      Nullable="False"
+                      Property="Term/Properties[TermId]"
+                      Type="int" />
+        <SsdlProperty MaxLength="16"
+                      Name="TermName"
+                      Nullable="True"
+                      Property="Term/Properties[TermName]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="Volunteers">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="Volunteer" />
+        <SsdlProperty Name="VolunteerId"
+                      Nullable="False"
+                      Property="Volunteer/Properties[VolunteerId]"
+                      StoreGeneratedPattern="Identity"
+                      Type="int" />
+        <SsdlProperty MaxLength="64"
+                      Name="FirstName"
+                      Nullable="True"
+                      Property="Volunteer/Properties[FirstName]"
+                      Type="varchar" />
+        <SsdlProperty MaxLength="64"
+                      Name="Surname"
+                      Nullable="True"
+                      Property="Volunteer/Properties[Surname]"
+                      Type="varchar" />
+        <SsdlProperty MaxLength="1024"
+                      Name="PerformanceAttended"
+                      Nullable="True"
+                      Property="Volunteer/Properties[PerformanceAttended]"
+                      Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping EntitySet="VolunteerCapabilities">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet Schema="dbo"
+                       Table="VolunteerCapability" />
+        <SsdlProperty Name="VolunteerId"
+                      Nullable="False"
+                      Property="VolunteerCapability/Properties[VolunteerId]"
+                      Type="int" />
+        <SsdlProperty Name="JobId"
+                      Nullable="False"
+                      Property="VolunteerCapability/Properties[JobId]"
+                      Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping AssociationSet="FK_Course_CourseType">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_Course_CourseType" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_CourseType]/Members[CourseType]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="CourseTypeCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_CourseType]/Members[Course]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="CourseTypeCode" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_Course_Term">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_Course_Term" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_Term]/Members[Term]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="TermId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_Course_Term]/Members[Course]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="TermId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_CourseAttendance_Child">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_CourseAttendance_Child" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Child]/Members[Child]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="ChildId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Child]/Members[CourseAttendance]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="ChildId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_CourseAttendance_Course">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_CourseAttendance_Course" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Course]/Members[Course]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="CourseId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseAttendance_Course]/Members[CourseAttendance]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="CourseId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_CourseVolunteer_Course">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_CourseVolunteer_Course" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Course]/Members[Course]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="CourseId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Course]/Members[CourseVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="CourseId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_CourseVolunteer_Job">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_CourseVolunteer_Job" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Job]/Members[Job]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Job]/Members[CourseVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_CourseVolunteer_Volunteer">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_CourseVolunteer_Volunteer" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Volunteer]/Members[Volunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CourseVolunteer_Volunteer]/Members[CourseVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_CrbCheck_Volunteer">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_CrbCheck_Volunteer" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CrbCheck_Volunteer]/Members[Volunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_CrbCheck_Volunteer]/Members[CrbCheck]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_PlayVolunteer_Job">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_PlayVolunteer_Job" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Job]/Members[Job]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Job]/Members[PlayVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_PlayVolunteer_Play">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_PlayVolunteer_Play" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Play]/Members[Play]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="PlayId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Play]/Members[PlayVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="PlayId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_PlayVolunteer_Volunteer">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_PlayVolunteer_Volunteer" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Volunteer]/Members[Volunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_PlayVolunteer_Volunteer]/Members[PlayVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_ProductionVolunteer_Job">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_ProductionVolunteer_Job" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Job]/Members[Job]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Job]/Members[ProductionVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_ProductionVolunteer_Production">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_ProductionVolunteer_Production" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Production]/Members[Production]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="ProductionId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Production]/Members[ProductionVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="ProductionId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_ProductionVolunteer_Volunteer">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_ProductionVolunteer_Volunteer" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Volunteer]/Members[Volunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_ProductionVolunteer_Volunteer]/Members[ProductionVolunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_VolunteerCapability_Job">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_VolunteerCapability_Job" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Job]/Members[Job]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Job]/Members[VolunteerCapability]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="JobId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping AssociationSet="FK_VolunteerCapability_Volunteer">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet Name="FK_VolunteerCapability_Volunteer" />
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Volunteer]/Members[Volunteer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd End="SceneCRMData/Members[FK_VolunteerCapability_Volunteer]/Members[VolunteerCapability]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef Name="VolunteerId" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+
 
 
 </ModelFragment>
