@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="SceneCRMDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SceneCRMDataStore">
+    <EntitySet Name="Child" EntityType="SceneCRMDataStore.Child" store:Type="Tables" Schema="dbo" Table="Child" />
+    <EntitySet Name="Course" EntityType="SceneCRMDataStore.Course" store:Type="Tables" Schema="dbo" Table="Course" />
+    <EntitySet Name="CourseAttendance" EntityType="SceneCRMDataStore.CourseAttendance" store:Type="Tables" Schema="dbo" Table="CourseAttendance" />
+    <EntitySet Name="CourseType" EntityType="SceneCRMDataStore.CourseType" store:Type="Tables" Schema="dbo" Table="CourseType" />
+    <EntitySet Name="CourseVolunteer" EntityType="SceneCRMDataStore.CourseVolunteer" store:Type="Tables" Schema="dbo" Table="CourseVolunteer" />
+    <EntitySet Name="CrbCheck" EntityType="SceneCRMDataStore.CrbCheck" store:Type="Tables" Schema="dbo" Table="CrbCheck" />
+    <EntitySet Name="Job" EntityType="SceneCRMDataStore.Job" store:Type="Tables" Schema="dbo" Table="Job" />
+    <EntitySet Name="Play" EntityType="SceneCRMDataStore.Play" store:Type="Tables" Schema="dbo" Table="Play" />
+    <EntitySet Name="PlayVolunteer" EntityType="SceneCRMDataStore.PlayVolunteer" store:Type="Tables" Schema="dbo" Table="PlayVolunteer" />
+    <EntitySet Name="Production" EntityType="SceneCRMDataStore.Production" store:Type="Tables" Schema="dbo" Table="Production" />
+    <EntitySet Name="ProductionVolunteer" EntityType="SceneCRMDataStore.ProductionVolunteer" store:Type="Tables" Schema="dbo" Table="ProductionVolunteer" />
+    <EntitySet Name="sysdiagrams" EntityType="SceneCRMDataStore.sysdiagram" store:Type="Tables" Schema="dbo" Table="sysdiagrams" />
+    <EntitySet Name="Term" EntityType="SceneCRMDataStore.Term" store:Type="Tables" Schema="dbo" Table="Term" />
+    <EntitySet Name="Volunteer" EntityType="SceneCRMDataStore.Volunteer" store:Type="Tables" Schema="dbo" Table="Volunteer" />
+    <EntitySet Name="VolunteerCapability" EntityType="SceneCRMDataStore.VolunteerCapability" store:Type="Tables" Schema="dbo" Table="VolunteerCapability" />
+    <AssociationSet Name="FK_Course_CourseType" Association="SceneCRMDataStore.FK_Course_CourseType">
+      <End Role="CourseType" EntitySet="CourseType" />
+      <End Role="Course" EntitySet="Course" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Course_Term" Association="SceneCRMDataStore.FK_Course_Term">
+      <End Role="Term" EntitySet="Term" />
+      <End Role="Course" EntitySet="Course" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseAttendance_Child" Association="SceneCRMDataStore.FK_CourseAttendance_Child">
+      <End Role="Child" EntitySet="Child" />
+      <End Role="CourseAttendance" EntitySet="CourseAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseAttendance_Course" Association="SceneCRMDataStore.FK_CourseAttendance_Course">
+      <End Role="Course" EntitySet="Course" />
+      <End Role="CourseAttendance" EntitySet="CourseAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseVolunteer_Course" Association="SceneCRMDataStore.FK_CourseVolunteer_Course">
+      <End Role="Course" EntitySet="Course" />
+      <End Role="CourseVolunteer" EntitySet="CourseVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseVolunteer_Job" Association="SceneCRMDataStore.FK_CourseVolunteer_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="CourseVolunteer" EntitySet="CourseVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseVolunteer_Volunteer" Association="SceneCRMDataStore.FK_CourseVolunteer_Volunteer">
+      <End Role="Volunteer" EntitySet="Volunteer" />
+      <End Role="CourseVolunteer" EntitySet="CourseVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CrbCheck_Volunteer" Association="SceneCRMDataStore.FK_CrbCheck_Volunteer">
+      <End Role="Volunteer" EntitySet="Volunteer" />
+      <End Role="CrbCheck" EntitySet="CrbCheck" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayVolunteer_Job" Association="SceneCRMDataStore.FK_PlayVolunteer_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="PlayVolunteer" EntitySet="PlayVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayVolunteer_Play" Association="SceneCRMDataStore.FK_PlayVolunteer_Play">
+      <End Role="Play" EntitySet="Play" />
+      <End Role="PlayVolunteer" EntitySet="PlayVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayVolunteer_Volunteer" Association="SceneCRMDataStore.FK_PlayVolunteer_Volunteer">
+      <End Role="Volunteer" EntitySet="Volunteer" />
+      <End Role="PlayVolunteer" EntitySet="PlayVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductionVolunteer_Job" Association="SceneCRMDataStore.FK_ProductionVolunteer_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="ProductionVolunteer" EntitySet="ProductionVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductionVolunteer_Production" Association="SceneCRMDataStore.FK_ProductionVolunteer_Production">
+      <End Role="Production" EntitySet="Production" />
+      <End Role="ProductionVolunteer" EntitySet="ProductionVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductionVolunteer_Volunteer" Association="SceneCRMDataStore.FK_ProductionVolunteer_Volunteer">
+      <End Role="Volunteer" EntitySet="Volunteer" />
+      <End Role="ProductionVolunteer" EntitySet="ProductionVolunteer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VolunteerCapability_Job" Association="SceneCRMDataStore.FK_VolunteerCapability_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="VolunteerCapability" EntitySet="VolunteerCapability" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VolunteerCapability_Volunteer" Association="SceneCRMDataStore.FK_VolunteerCapability_Volunteer">
+      <End Role="Volunteer" EntitySet="Volunteer" />
+      <End Role="VolunteerCapability" EntitySet="VolunteerCapability" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Child">
+    <Key>
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="ChildId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Reference" Type="varchar" Nullable="false" MaxLength="16" />
+    <Property Name="FirstName" Type="varchar" MaxLength="64" />
+    <Property Name="Surname" Type="varchar" Nullable="false" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="CourseId" />
+    </Key>
+    <Property Name="CourseId" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" />
+    <Property Name="CourseTypeCode" Type="varchar" MaxLength="8" />
+    <Property Name="TermId" Type="int" />
+  </EntityType>
+  <EntityType Name="CourseAttendance">
+    <Key>
+      <PropertyRef Name="ChildId" />
+      <PropertyRef Name="CourseId" />
+    </Key>
+    <Property Name="ChildId" Type="int" Nullable="false" />
+    <Property Name="CourseId" Type="int" Nullable="false" />
+    <Property Name="Completed" Type="bit" />
+  </EntityType>
+  <EntityType Name="CourseType">
+    <Key>
+      <PropertyRef Name="CourseTypeCode" />
+    </Key>
+    <Property Name="CourseTypeCode" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="CourseTypeName" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="CourseVolunteer">
+    <Key>
+      <PropertyRef Name="CourseId" />
+      <PropertyRef Name="VolunteerId" />
+      <PropertyRef Name="JobId" />
+    </Key>
+    <Property Name="CourseId" Type="int" Nullable="false" />
+    <Property Name="VolunteerId" Type="int" Nullable="false" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="2048" />
+  </EntityType>
+  <EntityType Name="CrbCheck">
+    <Key>
+      <PropertyRef Name="CrbCheckId" />
+    </Key>
+    <Property Name="CrbCheckId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CheckDate" Type="datetime" />
+    <Property Name="CrbNumber" Type="varchar" MaxLength="32" />
+    <Property Name="OnlineFormSent" Type="datetime" />
+    <Property Name="FormFilledOut" Type="datetime" />
+    <Property Name="DateCheckExpires" Type="datetime" />
+    <Property Name="IdComplete" Type="datetime" />
+    <Property Name="VolunteerId" Type="int" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="JobId" />
+    </Key>
+    <Property Name="JobId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="Play">
+    <Key>
+      <PropertyRef Name="PlayId" />
+    </Key>
+    <Property Name="PlayId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ChildId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="PlayVolunteer">
+    <Key>
+      <PropertyRef Name="PlayId" />
+      <PropertyRef Name="VolunteerId" />
+      <PropertyRef Name="JobId" />
+    </Key>
+    <Property Name="PlayId" Type="int" Nullable="false" />
+    <Property Name="VolunteerId" Type="int" Nullable="false" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="2048" />
+  </EntityType>
+  <EntityType Name="Production">
+    <Key>
+      <PropertyRef Name="ProductionId" />
+    </Key>
+    <Property Name="ProductionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="ProductionVolunteer">
+    <Key>
+      <PropertyRef Name="VolunteerId" />
+      <PropertyRef Name="JobId" />
+      <PropertyRef Name="ProductionId" />
+    </Key>
+    <Property Name="VolunteerId" Type="int" Nullable="false" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="ProductionId" Type="int" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="2048" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Term">
+    <Key>
+      <PropertyRef Name="TermId" />
+    </Key>
+    <Property Name="TermId" Type="int" Nullable="false" />
+    <Property Name="TermName" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="Volunteer">
+    <Key>
+      <PropertyRef Name="VolunteerId" />
+    </Key>
+    <Property Name="VolunteerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" MaxLength="64" />
+    <Property Name="Surname" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="VolunteerCapability">
+    <Key>
+      <PropertyRef Name="VolunteerId" />
+      <PropertyRef Name="JobId" />
+    </Key>
+    <Property Name="VolunteerId" Type="int" Nullable="false" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Course_CourseType">
+    <End Role="CourseType" Type="SceneCRMDataStore.CourseType" Multiplicity="0..1" />
+    <End Role="Course" Type="SceneCRMDataStore.Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseType">
+        <PropertyRef Name="CourseTypeCode" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="CourseTypeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Course_Term">
+    <End Role="Term" Type="SceneCRMDataStore.Term" Multiplicity="0..1" />
+    <End Role="Course" Type="SceneCRMDataStore.Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Term">
+        <PropertyRef Name="TermId" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="TermId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseAttendance_Child">
+    <End Role="Child" Type="SceneCRMDataStore.Child" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CourseAttendance" Type="SceneCRMDataStore.CourseAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Child">
+        <PropertyRef Name="ChildId" />
+      </Principal>
+      <Dependent Role="CourseAttendance">
+        <PropertyRef Name="ChildId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseAttendance_Course">
+    <End Role="Course" Type="SceneCRMDataStore.Course" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CourseAttendance" Type="SceneCRMDataStore.CourseAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="CourseId" />
+      </Principal>
+      <Dependent Role="CourseAttendance">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseVolunteer_Course">
+    <End Role="Course" Type="SceneCRMDataStore.Course" Multiplicity="1" />
+    <End Role="CourseVolunteer" Type="SceneCRMDataStore.CourseVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="CourseId" />
+      </Principal>
+      <Dependent Role="CourseVolunteer">
+        <PropertyRef Name="CourseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseVolunteer_Job">
+    <End Role="Job" Type="SceneCRMDataStore.Job" Multiplicity="1" />
+    <End Role="CourseVolunteer" Type="SceneCRMDataStore.CourseVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobId" />
+      </Principal>
+      <Dependent Role="CourseVolunteer">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseVolunteer_Volunteer">
+    <End Role="Volunteer" Type="SceneCRMDataStore.Volunteer" Multiplicity="1" />
+    <End Role="CourseVolunteer" Type="SceneCRMDataStore.CourseVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Volunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Principal>
+      <Dependent Role="CourseVolunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CrbCheck_Volunteer">
+    <End Role="Volunteer" Type="SceneCRMDataStore.Volunteer" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CrbCheck" Type="SceneCRMDataStore.CrbCheck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Volunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Principal>
+      <Dependent Role="CrbCheck">
+        <PropertyRef Name="VolunteerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayVolunteer_Job">
+    <End Role="Job" Type="SceneCRMDataStore.Job" Multiplicity="1" />
+    <End Role="PlayVolunteer" Type="SceneCRMDataStore.PlayVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobId" />
+      </Principal>
+      <Dependent Role="PlayVolunteer">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayVolunteer_Play">
+    <End Role="Play" Type="SceneCRMDataStore.Play" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PlayVolunteer" Type="SceneCRMDataStore.PlayVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Play">
+        <PropertyRef Name="PlayId" />
+      </Principal>
+      <Dependent Role="PlayVolunteer">
+        <PropertyRef Name="PlayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayVolunteer_Volunteer">
+    <End Role="Volunteer" Type="SceneCRMDataStore.Volunteer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PlayVolunteer" Type="SceneCRMDataStore.PlayVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Volunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Principal>
+      <Dependent Role="PlayVolunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductionVolunteer_Job">
+    <End Role="Job" Type="SceneCRMDataStore.Job" Multiplicity="1" />
+    <End Role="ProductionVolunteer" Type="SceneCRMDataStore.ProductionVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobId" />
+      </Principal>
+      <Dependent Role="ProductionVolunteer">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductionVolunteer_Production">
+    <End Role="Production" Type="SceneCRMDataStore.Production" Multiplicity="1" />
+    <End Role="ProductionVolunteer" Type="SceneCRMDataStore.ProductionVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Production">
+        <PropertyRef Name="ProductionId" />
+      </Principal>
+      <Dependent Role="ProductionVolunteer">
+        <PropertyRef Name="ProductionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductionVolunteer_Volunteer">
+    <End Role="Volunteer" Type="SceneCRMDataStore.Volunteer" Multiplicity="1" />
+    <End Role="ProductionVolunteer" Type="SceneCRMDataStore.ProductionVolunteer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Volunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Principal>
+      <Dependent Role="ProductionVolunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VolunteerCapability_Job">
+    <End Role="Job" Type="SceneCRMDataStore.Job" Multiplicity="1" />
+    <End Role="VolunteerCapability" Type="SceneCRMDataStore.VolunteerCapability" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="JobId" />
+      </Principal>
+      <Dependent Role="VolunteerCapability">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VolunteerCapability_Volunteer">
+    <End Role="Volunteer" Type="SceneCRMDataStore.Volunteer" Multiplicity="1" />
+    <End Role="VolunteerCapability" Type="SceneCRMDataStore.VolunteerCapability" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Volunteer">
+        <PropertyRef Name="VolunteerId" />
+      </Principal>
+      <Dependent Role="VolunteerCapability">
+        <PropertyRef Name="VolunteerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

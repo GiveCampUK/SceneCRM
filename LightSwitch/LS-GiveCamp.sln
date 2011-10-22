@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{ECD6D718-D1CF-4119-97F3-97C25A0DFBF9}") = "LS-GiveCamp", "LS-GiveCamp\LS-GiveCamp.lsproj", "{C2512A9F-741A-4B5C-8E3B-35BA60B2350C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{BE751D70-FB20-4ACD-B22C-D68602A6225C}.0 = {D92D9D8D-B1D2-47B1-BDCB-83005B45122D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2512A9F-741A-4B5C-8E3B-35BA60B2350C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2512A9F-741A-4B5C-8E3B-35BA60B2350C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2512A9F-741A-4B5C-8E3B-35BA60B2350C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2512A9F-741A-4B5C-8E3B-35BA60B2350C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811218DB-DCAD-48A7-AD8E-BD67D879255C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811218DB-DCAD-48A7-AD8E-BD67D879255C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811218DB-DCAD-48A7-AD8E-BD67D879255C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811218DB-DCAD-48A7-AD8E-BD67D879255C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80BFE2D-C488-40FB-BC8F-79387CB57727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80BFE2D-C488-40FB-BC8F-79387CB57727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80BFE2D-C488-40FB-BC8F-79387CB57727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80BFE2D-C488-40FB-BC8F-79387CB57727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92D9D8D-B1D2-47B1-BDCB-83005B45122D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92D9D8D-B1D2-47B1-BDCB-83005B45122D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92D9D8D-B1D2-47B1-BDCB-83005B45122D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92D9D8D-B1D2-47B1-BDCB-83005B45122D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE751D70-FB20-4ACD-B22C-D68602A6225C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE751D70-FB20-4ACD-B22C-D68602A6225C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE751D70-FB20-4ACD-B22C-D68602A6225C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE751D70-FB20-4ACD-B22C-D68602A6225C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79BF13F3-0192-4751-8487-EE455575ED36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79BF13F3-0192-4751-8487-EE455575ED36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79BF13F3-0192-4751-8487-EE455575ED36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79BF13F3-0192-4751-8487-EE455575ED36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

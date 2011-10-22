@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="SceneCRMDataObjectContext" StorageEntityContainer="SceneCRMDataStore">
+    <EntitySetMapping Name="Children">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Child)">
+        <MappingFragment StoreEntitySet="Child">
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Course)">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="CourseTypeCode" ColumnName="CourseTypeCode" />
+          <ScalarProperty Name="TermId" ColumnName="TermId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseAttendances">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.CourseAttendance)">
+        <MappingFragment StoreEntitySet="CourseAttendance">
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="Completed" ColumnName="Completed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.CourseType)">
+        <MappingFragment StoreEntitySet="CourseType">
+          <ScalarProperty Name="CourseTypeCode" ColumnName="CourseTypeCode" />
+          <ScalarProperty Name="CourseTypeName" ColumnName="CourseTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseVolunteers">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.CourseVolunteer)">
+        <MappingFragment StoreEntitySet="CourseVolunteer">
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CrbChecks">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.CrbCheck)">
+        <MappingFragment StoreEntitySet="CrbCheck">
+          <ScalarProperty Name="CrbCheckId" ColumnName="CrbCheckId" />
+          <ScalarProperty Name="CheckDate" ColumnName="CheckDate" />
+          <ScalarProperty Name="CrbNumber" ColumnName="CrbNumber" />
+          <ScalarProperty Name="OnlineFormSent" ColumnName="OnlineFormSent" />
+          <ScalarProperty Name="FormFilledOut" ColumnName="FormFilledOut" />
+          <ScalarProperty Name="DateCheckExpires" ColumnName="DateCheckExpires" />
+          <ScalarProperty Name="IdComplete" ColumnName="IdComplete" />
+          <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Job)">
+        <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plays">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Play)">
+        <MappingFragment StoreEntitySet="Play">
+          <ScalarProperty Name="PlayId" ColumnName="PlayId" />
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlayVolunteers">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.PlayVolunteer)">
+        <MappingFragment StoreEntitySet="PlayVolunteer">
+          <ScalarProperty Name="PlayId" ColumnName="PlayId" />
+          <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productions">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Production)">
+        <MappingFragment StoreEntitySet="Production">
+          <ScalarProperty Name="ProductionId" ColumnName="ProductionId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionVolunteers">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.ProductionVolunteer)">
+        <MappingFragment StoreEntitySet="ProductionVolunteer">
+          <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="ProductionId" ColumnName="ProductionId" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.sysdiagram)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Terms">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Term)">
+        <MappingFragment StoreEntitySet="Term">
+          <ScalarProperty Name="TermId" ColumnName="TermId" />
+          <ScalarProperty Name="TermName" ColumnName="TermName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Volunteers">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.Volunteer)">
+        <MappingFragment StoreEntitySet="Volunteer">
+          <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VolunteerCapabilities">
+      <EntityTypeMapping TypeName="IsTypeOf(SceneCRMData.VolunteerCapability)">
+        <MappingFragment StoreEntitySet="VolunteerCapability">
+          <ScalarProperty Name="VolunteerId" ColumnName="VolunteerId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
