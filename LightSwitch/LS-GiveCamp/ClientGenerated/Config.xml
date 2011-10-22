@@ -19,5 +19,16 @@
     <SubsystemPackage>RuntimeUserCodeLoader</SubsystemPackage>
   </SubsystemPackages>
   <UserCodeAssemblies></UserCodeAssemblies>
-  <ExtensionAssemblies />
+  <ExtensionAssemblies>
+    <ExtensionAssembly>Microsoft.LightSwitch.Extensions.Client, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Xpf.Printing.v11.1.Core, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Printing.v11.1.Core, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Data.v11.1, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Xpf.Core.v11.1, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Xpf.Docking.v11.1, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Xpf.Layout.v11.1.Core, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.Xpf.Printing.v11.1, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.XtraReports.v11.1.LightSwitch.Common, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+    <ExtensionAssembly>DevExpress.XtraReports.v11.1.LightSwitch.Client, Version=11.1.8.5, Culture=neutral, PublicKeyToken=B88D1754D700E49A</ExtensionAssembly>
+  </ExtensionAssemblies>
 </Configuration>

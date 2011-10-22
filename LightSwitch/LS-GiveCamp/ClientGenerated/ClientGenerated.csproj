@@ -11,7 +11,7 @@
     <ProjectGuid>{A80BFE2D-C488-40FB-BC8F-79387CB57727}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>LightSwitchApplication</RootNamespace>
-    <AssemblyName>LS_GiveCamp.ClientGenerated</AssemblyName>
+    <AssemblyName>Scene And Heard.ClientGenerated</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <LightSwitchVersion>v1.0</LightSwitchVersion>
@@ -63,6 +63,19 @@
     <NoWarn>1522</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v11.1, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Docking.v11.1, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Layout.v11.1.Core, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v11.1, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v11.1.Core, Version=11.1.8.5, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1.LightSwitch.Client">
+      <HintPath>..\_Pvt_Extensions\DevExpress.XtraReports.LightSwitch\ClientGen\Reference\DevExpress.XtraReports.v11.1.LightSwitch.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.1.LightSwitch.Common">
+      <HintPath>..\_Pvt_Extensions\DevExpress.XtraReports.LightSwitch\ClientGen\Reference\DevExpress.XtraReports.v11.1.LightSwitch.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.LightSwitch, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8e9329cecb4700e9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(LightSwitchPath)\LightSwitch\1.0\Client\Microsoft.LightSwitch.dll</HintPath>
@@ -89,6 +102,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(LightSwitchPath)\LightSwitch\1.0\Client\Microsoft.LightSwitch.ExportProvider.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.LightSwitch.Extensions.Client">
+      <HintPath>..\_Pvt_Extensions\Microsoft.LightSwitch.Extensions\ClientGen\Reference\Microsoft.LightSwitch.Extensions.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.LightSwitch.Extensions.Design.Client">
+      <HintPath>..\_Pvt_Extensions\Microsoft.LightSwitch.Extensions\Client\DebugOnlyRef\Microsoft.LightSwitch.Extensions.Design.Client.dll</HintPath>
+      <ExtensionReferenceType>DebugOnly</ExtensionReferenceType>
     </Reference>
     <Reference Include="Microsoft.LightSwitch.ManifestService.Client, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8e9329cecb4700e9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

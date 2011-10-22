@@ -1,7 +1,7 @@
-<OutOfBrowserSettings ShortName="LS_GiveCamp" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
-  <OutOfBrowserSettings.Blurb>LS_GiveCamp</OutOfBrowserSettings.Blurb>
+<OutOfBrowserSettings ShortName="Scene And Heard" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
+  <OutOfBrowserSettings.Blurb>Scene And Heard</OutOfBrowserSettings.Blurb>
   <OutOfBrowserSettings.WindowSettings>
-    <WindowSettings Title="LS_GiveCamp" WindowStartupLocation="Manual" Top="0" Left="0"/>
+    <WindowSettings Title="Scene And Heard" Top="0" Left="0" WindowStartupLocation="Manual" />
   </OutOfBrowserSettings.WindowSettings>
   <OutOfBrowserSettings.SecuritySettings>
     <SecuritySettings ElevatedPermissions="Required" />
